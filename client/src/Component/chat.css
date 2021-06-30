@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+.chat{
+    background-color: #fff;
+    width: 700px;
+    height: 800px;
+    margin: 50px auto 0;
+    border-radius: 3px;
+}
+
+.chat__header{
+    width: 100%;
+    height: 50px;
+    background-color: burlywood;
+    text-align: center;
+    line-height: 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.text__header{
+    font-size: 24px;
+    font-weight: 600;
+}
+.chat__body{
+    height: 700px;
+    width: 100%;    
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.chat__body::-webkit-scrollbar{
+    width: 10px;
+}
+.chat__body::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.chat__message{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.chat__avtar{
+    height: 50px;
+    width: 50px;
+    background-color: burlywood;
+    border-radius: 50px;
+
+}
+.chat__body_message{
+  
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%;
+    
+}
+.you .chat__avtar{
+    margin-left: 20px;
+}
+.you .chat__body_message{
+    background-color: #e5efff;
+    margin-left: 10px;
+}
+.me{
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.me .chat__body_message{
+    background-color: #e5efff;
+    margin-right: 10px;
+   
+}
+.me .chat__avtar{
+    margin-right: 20px;
+}
+.chat__label{
+    font-size: 12px;
+}
+.chat__text{
+    margin-top: 5px;
+    font-size: 18px;
+}
+.time__chat{
+    text-align: left;
+    margin-top : 10px;
+    font-size: 12px;
+}
+.chat__form{
+    border-top: 1px solid steelblue;
+    width: 100%;
+    display: flex;
+}
+.text_input{
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 8px 12px;
+    resize: none;
+}
+.text_input::-webkit-scrollbar{
+    width: 10px;
+}
+.text_input::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.btn__send{
+    width: 80px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    border-left: 1px solid steelblue;
+    cursor: pointer;
+}
